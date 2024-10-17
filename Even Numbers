@@ -1,0 +1,22 @@
+package even.numbers;
+
+/**
+ *
+ * @author Hajra
+ */
+public class EvenNumbers {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int i = 1;
+        while(i < 21){
+        if(i % 2 == 0)
+            System.out.println("Even numbers from 1 to 20 are:" + i);
+            i++;
+        
+    }
+    
+}
+}
