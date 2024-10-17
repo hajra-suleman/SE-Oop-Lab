@@ -1,0 +1,22 @@
+package computer;
+
+/**
+ *
+ * @author Hajra
+ */
+public class Computer {
+             String Name;
+             String Configuration;
+             int Cost;
+             String Operating_System;
+   
+    public static void main(String[] args) {
+        Computer c1 = new Computer();
+        c1.Name = "Apple"; c1.Configuration = "i5" ; c1.Cost = 50000; c1.Operating_System = "IOS";
+        System.out.println(c1.Name);
+        System.out.println(c1.Configuration);
+        System.out.println(c1.Cost);      
+        System.out.println(c1.Operating_System);
+}
+    
+}
