@@ -1,0 +1,42 @@
+package movie;
+
+/**
+ *
+ * @author Hajra
+ */
+public class Movie {
+    
+private String title;
+private String director;
+private int release_year;
+
+//Constructor
+public Movie(String title, String director, int release_year){
+    this.title = title;
+    this.director = director;
+    this.release_year = release_year;
+}
+
+//Getter
+public String getTitle(){
+    return title;
+}
+
+public String getDirector(){
+    return director;
+}
+
+public int getRelease_year(){
+    return release_year;
+}
+    
+    public static void main(String[] args) {
+        
+        Movie myMovie = new Movie("Hush", "Mike Flanagan", 2016);
+        
+        System.out.println("Title of Movie:" + myMovie.getTitle());
+        System.out.println("Director of the Movie:" + myMovie.getDirector());
+        System.out.println("Year of Release:" + myMovie.getRelease_year());
+    }
+    
+}
