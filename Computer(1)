@@ -1,0 +1,101 @@
+package ComputerPkg;
+
+/**
+ *
+ * @author Hajra
+ */
+public class CPU {
+     private String Brand;
+     private int Capacity;
+     
+     //Constructor
+     public CPU(String Brand, int Capacity){
+        this.Brand = Brand;
+        this.Capacity = Capacity;
+     }
+    
+     @Override
+     public String toString(){
+         return "CPU > Brand: " + Brand + " Capacity: " + Capacity + "GB";
+     }
+}
+
+package ComputerPkg;
+
+import ComputerPkg.RAM;
+import ComputerPkg.Harddrive;
+import ComputerPkg.CPU;
+
+/**
+ *
+ * @author Hajra
+ */
+public class Computer {
+   CPU cpu;
+   Harddrive hdd;
+   RAM ram;
+   
+   //Function
+   @Override
+   public String toString(){
+       return "Computer > \n" + cpu + "\n" + hdd + "\n" + ram;
+   }
+   
+   //Constructor
+   public Computer(){
+       this.cpu = new CPU("Dell", 1000);
+       this.hdd = new Harddrive("Maxtor", 500);
+       this.ram = new RAM("Kingston", 8);
+   }
+    
+    public static void main(String[] args) {
+       Computer comp = new Computer();
+       System.out.println(comp);
+       
+    }
+    
+}
+package ComputerPkg;
+
+/**
+ *
+ * @author Hajra
+ */
+public class Harddrive {
+     private String Brand;
+     private int Capacity;
+     
+     //Constructor
+     public Harddrive( String Brand, int Capacity ){
+        this.Brand = Brand;
+        this.Capacity = Capacity;
+     }
+    
+     @Override
+     public String toString(){
+         return "HD > Brand: " + Brand + " Capacity: " + Capacity + "GB";
+     }
+}
+package ComputerPkg;
+
+/**
+ *
+ * @author Hajra
+ */
+public class RAM {
+    String Brand;
+    int Capacity;
+    
+   //Constructor
+     public RAM( String Brand, int Capacity ){
+        this.Brand = Brand;
+        this.Capacity = Capacity;
+     }
+    
+    @Override
+     public String toString(){
+         return "RAM > Brand: " + Brand + " Capacity: " + Capacity + "GB";
+    }
+    
+}
+
