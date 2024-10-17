@@ -1,0 +1,19 @@
+package arraytask1;
+
+/**
+ *
+ * @author Hajra
+ */
+public class Arraytask1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        String[] flowers = {"lily", "tulip", "rose", "jasmine"};
+        for(String flw : flowers){
+            System.out.println ("flowers:" + flw);
+        }
+    
+    }
+}
