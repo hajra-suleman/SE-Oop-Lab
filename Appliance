@@ -1,0 +1,68 @@
+package appliance;
+
+public class Appliance {
+
+    private String brand;
+    private String model;
+    private int powerConsumption;
+    
+    //Public Constructor
+    public Appliance(String brand, String model, int powerConsumption){
+        this.brand = brand;
+        this.model = model;
+        this.powerConsumption = powerConsumption;
+    }
+    
+    //Getter Method
+    public String getBrand(){
+        return brand;
+    }
+    
+    public String getModel(){
+        return model;
+    }
+    
+    public int getPowerConsumption(){
+        return powerConsumption;
+    }
+    
+    public static void main(String[] args) {
+        
+        appliance.Refrigerator ref = new appliance.Refrigerator("Haier", "Black", 12, 8);
+        
+        System.out.println("Brand Name:" + ref.getBrand());
+        System.out.println("Model Name:" + ref.getModel());
+        System.out.println("Power Consumption:" + ref.getPowerConsumption());
+        System.out.println("Capacity:" + ref.getCapacity());
+        
+}
+}
+package appliance;
+
+
+public class Refrigerator extends Appliance{
+     private int capacity;
+        
+    //Public Constructor
+    public Refrigerator(String brand, String model, int powerConsumption, int capacity){
+        super(brand, model, powerConsumption);
+        this.capacity = capacity;
+    }
+    
+    //Getter Method
+    public int getCapacity(){
+        return capacity;
+    }
+    
+    //Setter Method
+    public void setCapacity(int capacity){
+        this.capacity = capacity;
+    }
+    
+    
+    
+    
+    
+}
+
+
