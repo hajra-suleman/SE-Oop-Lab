@@ -1,0 +1,23 @@
+package factorial;
+
+/**
+ *
+ * @author Hajra
+ */
+public class Factorial {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       
+       int factorial = 1;
+       int i = 1;
+       while(i <= 5 ){
+           factorial*= i;
+           i++;
+       }
+        System.out.println("Factorial of five is:" + factorial );
+    }
+    
+}
