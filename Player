@@ -1,0 +1,55 @@
+package player;
+
+/**
+ *
+ * @author Hajra
+ */
+public class Player {
+    String name;
+    String position;
+    
+    //Constructor
+    Player(String name, String position){
+        this.name = name;
+        this.position = position;
+    }
+    void displayPlayer(){
+        System.out.println("Name: " + name );
+        System.out.println("Position: " + position );
+    }
+    
+
+    public static void main(String[] args) {
+       Player player1 = new Player("Ronaldo", "Left Forward");
+       Player player2 = new Player("Messi", "Center Forward");
+       Player player3 = new Player("Meradona", "Right Midfield");
+    
+       player1.displayPlayer();
+       player2.displayPlayer();
+       player3.displayPlayer();
+    }
+}
+   package player;
+
+
+public class Team {
+    Player player;
+        
+    Team(Player player){
+          this.player= player;
+       
+    }
+ 
+    public static void main(String[] args){
+     
+        Player play = new Player("jack","Ground");
+        Player play2 = new Player("jk","und");
+        Player play3 = new Player("k","round");
+        
+        Team t = new Team(play);
+        
+        play.displayPlayer();
+        play2.displayPlayer();
+        play3.displayPlayer();
+    }
+}
