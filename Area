@@ -1,0 +1,20 @@
+package area;
+
+/**
+ *
+ * @author Hajra
+ */
+public class Area {
+            int Length;
+            int Width;
+            int Breadth;
+   
+    public static void main(String[] args) {
+        Area a1 = new Area();
+        a1.Length = 10; a1.Width = 5; a1.Breadth = a1.Length*a1.Width;
+        System.out.println("Length is: " + a1.Length + " Meters");
+        System.out.println( "Width is: " + a1.Width + " Meters");
+        System.out.println("Breadth is: "+ a1.Breadth + " Meters");
+    }
+    
+}
